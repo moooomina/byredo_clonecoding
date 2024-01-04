@@ -1,27 +1,33 @@
 header {}
 /* 헤더 위:검정창 */
 header .free {
-    background-color:antiquewhite; height:40px;
-}
-header .free .txt {
+    background-color:#000; height:40px;
     display:flex; flex-flow:row nowrap;
-    align-items:center;
+    align-items:center; justify-content: space-between;
 }
+header .free .txt {}
 header .free .txt span {color:white;}
 header .free .close {}
-header .free .close img {width:24px;}
+header .free .close img {width:24px; margin:10px;}
 /* 헤더 아래 */
-header .headerBottom {}
+header .headerBottom {
+    background-color:#fff; padding:12px 20px;
+    width:100%; height:60px;
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+    justify-content: space-between;
+    position:sticky; top:0px;
+}
 /* 로고 */
 header .headerBottom h1 {}
 header .headerBottom h1 a {}
 header .headerBottom h1 a img {}
 /* nav시작 */
 header .headerBottom nav {}
-header .headerBottom nav #gnb {}
+header .headerBottom nav #gnb {display:flex;}
 header .headerBottom nav #gnb .menuTitle {}
-header .headerBottom nav #gnb .menuTitle a {}
-header .headerBottom .subWrapPerfume {}
+header .headerBottom nav #gnb .menuTitle a {padding:18px 20px 16px;}
+header .headerBottom .subWrapPerfume {display:none;}
 header .headerBottom .subWrapPerfume ul {}
 header .headerBottom .subWrapPerfume ul .subTitle {}
 header .headerBottom .subWrapPerfume ul li {}
@@ -46,7 +52,7 @@ header .headerBottom .subWrapPerfume .subSurvice .enlang a {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang a img {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect a {}
-header .headerBottom .subWrapMakeup {}
+header .headerBottom .subWrapMakeup {display:none;}
 header .headerBottom .subWrapMakeup ul {}
 header .headerBottom .subWrapMakeup ul .subTitle {}
 header .headerBottom .subWrapMakeup ul li {}
@@ -71,7 +77,7 @@ header .headerBottom .subWrapMakeup .subSurvice .enlang a {}
 header .headerBottom .subWrapMakeup .subSurvice .enlang a img {}
 header .headerBottom .subWrapMakeup .subSurvice .enlang .enSelect {}
 header .headerBottom .subWrapMakeup .subSurvice .enlang .enSelect a {}
-header .headerBottom .subWrapHome {}
+header .headerBottom .subWrapHome {display:none;}
 header .headerBottom .subWrapHome ul {}
 header .headerBottom .subWrapHome ul .subTitle {}
 header .headerBottom .subWrapHome ul li {}
@@ -96,7 +102,7 @@ header .headerBottom .subWrapHome .subSurvice .enlang a {}
 header .headerBottom .subWrapHome .subSurvice .enlang a img {}
 header .headerBottom .subWrapHome .subSurvice .enlang .enSelect {}
 header .headerBottom .subWrapHome .subSurvice .enlang .enSelect a {}
-header .headerBottom .subWrapCare {}
+header .headerBottom .subWrapCare {display:none;}
 header .headerBottom .subWrapCare ul {}
 header .headerBottom .subWrapCare ul .subTitle {}
 header .headerBottom .subWrapCare ul li {}
@@ -121,7 +127,7 @@ header .headerBottom .subWrapCare .subSurvice .enlang a {}
 header .headerBottom .subWrapCare .subSurvice .enlang a img {}
 header .headerBottom .subWrapCare .subSurvice .enlang .enSelect {}
 header .headerBottom .subWrapCare .subSurvice .enlang .enSelect a {}
-header .headerBottom .subWrapProduct {}
+header .headerBottom .subWrapProduct {display:none;}
 header .headerBottom .subWrapsubWrapProductCare ul {}
 header .headerBottom .subWrapProduct ul .subTitle {}
 header .headerBottom .subWrapProduct ul li {}
@@ -147,11 +153,14 @@ header .headerBottom .subWrapProduct .subSurvice .enlang a img {}
 header .headerBottom .subWrapProduct .subSurvice .enlang .enSelect {}
 header .headerBottom .subWrapProduct .subSurvice .enlang .enSelect a {}
 /* 헤더 오른쪽 (아이콘) */
-header .headerBottom .icon {}
+header .headerBottom .icon {
+    display:flex; align-items:center;
+}
 header .headerBottom .icon .search {}
 header .headerBottom .icon .search a {}
-header .headerBottom .icon .search a img {}
-header .headerBottom .icon .search .searchFrm {}
+header .headerBottom .icon .search a img {width:24px;}
+/* 검색창 */
+header .headerBottom .icon .search .searchFrm {display:none;}
 header .headerBottom .icon .search .searchFrm #searchFrm {}
 header .headerBottom .icon .search .searchFrm #searchFrm fieldset {}
 header .headerBottom .icon .search .searchFrm #searchFrm fieldset .searchTxtz {}
@@ -159,10 +168,81 @@ header .headerBottom .icon .search .searchFrm #searchFrm fieldset #search {}
 header .headerBottom .icon .search .searchFrm #searchFrm fieldset #search img {}
 header .headerBottom .icon .search .searchFrm #searchFrm fieldset .close {}
 header .headerBottom .icon .search .searchFrm #searchFrm fieldset .close img {}
-header .headerBottom .icon .mypage {}
+header .headerBottom .icon .mypage {padding:0 20px;}
 header .headerBottom .icon .mypage a {}
-header .headerBottom .icon .mypage a img {}
+header .headerBottom .icon .mypage a img {width:22px;}
 header .headerBottom .icon a {}
-header .headerBottom .icon a img {}
+header .headerBottom .icon a img {width:24px;}
 /* 장바구니 */
-/*  */
+header .cartBg {display:none;}
+header .cartBg .cart {}
+header .cartBg .cart .bagTop {}
+header .cartBg .cart .bagTop h1 {}
+header .cartBg .cart .bagTop .close {}
+header .cartBg .cart .bagTop .close img {}
+header .cartBg .cart .bagList {}
+header .cartBg .cart a {}
+header .cartBg .cart .bagBottom {}
+header .cartBg .cart .bagBottom li {}
+header .cartBg .cart .bagBottom li span {}
+header .cartBg .cart .bagBottom li span img {}
+header .cartBg .cart .bagBottom li img {}
+/* mobile nav */
+header .m_header {display:none;}
+header .m_header a {}
+header .m_header a img {}
+header .m_header #m_nav {}
+header .m_header #m_nav li {}
+header .m_header #m_nav li a {}
+header .sideOpen {display:none;}
+header .sideOpen .sideMenu {}
+header .sideOpen .sideMenu .close {}
+header .sideOpen .sideMenu .close img {}
+header .sideOpen .sideMenu .m_navOpen {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li a {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li a img {}
+/* m_향수 */
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapPerfume {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapPerfume ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapPerfume ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapPerfume ul li {}
+/* m_메이크업 */
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapMakeup {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapMakeup ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapMakeup ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapMakeup ul li {}
+/* m_홈프라그란스 */
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapHome {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapHome ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapHome ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapHome ul li {}
+/* m_핸드바디케어 */
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapCare {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapCare ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapCare ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapCare ul li {}
+/* m_바이프로덕트 */
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapProduct {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapProduct ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapProduct ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapProduct ul li {}
+/* sideMenuBottom */
+header .sideOpen .sideMenu .sideMenuBottom {}
+header .sideOpen .sideMenu .sideMenuBottom .lang {}
+header .sideOpen .sideMenu .sideMenuBottom .lang a {}
+header .sideOpen .sideMenu .sideMenuBottom .lang a img {}
+header .sideOpen .sideMenu .sideMenuBottom .lang .langSelect {}
+header .sideOpen .sideMenu .sideMenuBottom .lang .langSelect a {}
+header .sideOpen .sideMenu .sideMenuBottom .lang .langSelect a img {}
+header .sideOpen .sideMenu .sideMenuBottom .enlang {}
+header .sideOpen .sideMenu .sideMenuBottom .enlang a {}
+header .sideOpen .sideMenu .sideMenuBottom .enlang a img {}
+header .sideOpen .sideMenu .sideMenuBottom .enlang .enSelect {}
+header .sideOpen .sideMenu .sideMenuBottom .enlang .enSelect a {}
+header .sideOpen .sideMenu .sideMenuBottom .mypage {}
+header .sideOpen .sideMenu .sideMenuBottom .mypage a {}
+header .sideOpen .sideMenu .sideMenuBottom .mypage a img {}
+/* footer */
+footer {display:none;}
