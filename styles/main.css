@@ -1,21 +1,37 @@
 /* main */
 main {}
 /* mainImg 공통 */
-main .mainImg {}
+main .mainImg {
+    display:flex; justify-content:space-between;
+    padding:720px 0 0 0;
+}
 main .mainImg span {}
 main .mainImg a {}
 /* productWrap 공통 */
-main .productWrap {}
+main .productWrap {
+    display:grid; justify-content:space-between;
+}
 main .productWrap .product {}
 main .productWrap .product span {}
 main .productWrap .product a {}
 /* 첫번째행 이미지 */
-main .productTop {}
+main .productTop {
+    background:url(../images/main/main_1920.jpg);
+    max-width:100%; height:auto;
+}
 /* 두번째행 이미지 */
-main .second {}
+main .second {
+    grid-template-columns:repeat(4,auto);
+}
 /* 세번째행 이미지 */
-main .productCenter {}
+main .productCenter {
+    background:url(../images/main/main_center_1920.jpg);
+    max-width:100%; height:auto;
+}
 /* 네번째행 이미지 */
 main .fourth {}
 /* 다섯번째행 이미지 */
-main .proudctBottom {}
+main .proudctBottom {
+    background:url(../images/main/main_bottom_1920.jpg);
+    max-width:100%; height:auto;
+}
