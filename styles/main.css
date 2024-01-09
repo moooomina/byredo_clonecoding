@@ -10,6 +10,7 @@ main .mainImg a {}
 /* productWrap 공통 */
 main .productWrap {
     display:grid; justify-content:space-between;
+    padding:300px 0 0 0;
 }
 main .productWrap .product {}
 main .productWrap .product span {}
@@ -22,14 +23,22 @@ main .productTop {
 /* 두번째행 이미지 */
 main .second {
     grid-template-columns:repeat(4,auto);
+    max-width:100%; height:auto;
 }
+main .second .product:nth-child(1) a {background:url(../images/main/secon_1.jpg);}
+main .second .product:nth-child(2) a {background:url(../images/main/secon_2.jpg);}
+main .second .product:nth-child(3) a {background:url(../images/main/secon_3.jpg);}
+main .second .product:nth-child(4) a {background:url(../images/main/secon_4.jpg);}
 /* 세번째행 이미지 */
 main .productCenter {
     background:url(../images/main/main_center_1920.jpg);
     max-width:100%; height:auto;
 }
 /* 네번째행 이미지 */
-main .fourth {}
+main .fourth {
+    grid-template-columns:repeat(4,auto);
+    max-width:100%; height:auto;
+}
 /* 다섯번째행 이미지 */
 main .proudctBottom {
     background:url(../images/main/main_bottom_1920.jpg);
