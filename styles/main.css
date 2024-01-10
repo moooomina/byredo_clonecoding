@@ -3,44 +3,55 @@ main {}
 /* mainImg 공통 */
 main .mainImg {
     display:flex; justify-content:space-between;
-    padding:720px 0 0 0;
+    height:80vh; padding:10px;
 }
 main .mainImg span {}
-main .mainImg a {}
+main .mainImg a {display:block;}
 /* productWrap 공통 */
 main .productWrap {
-    display:grid; justify-content:space-between;
-    padding:300px 0 0 0;
+    /* display:grid; justify-content:space-between; */
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
 }
-main .productWrap .product {}
+main .productWrap .product {
+    background-color:lightblue;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    width:25%; height:50vh;
+    padding:10px;
+}
 main .productWrap .product span {}
-main .productWrap .product a {}
+main .productWrap .product a {display:block;}
 /* 첫번째행 이미지 */
 main .productTop {
     background:url(../images/main/main_1920.jpg);
-    max-width:100%; height:auto;
+    max-width:100%;
 }
 /* 두번째행 이미지 */
 main .second {
-    grid-template-columns:repeat(4,auto);
-    max-width:100%; height:auto;
+    /* grid-template-columns:repeat(4,auto); */
+    /* max-width:100%; */
 }
-main .second .product:nth-child(1) a {background:url(../images/main/secon_1.jpg);}
-main .second .product:nth-child(2) a {background:url(../images/main/secon_2.jpg);}
-main .second .product:nth-child(3) a {background:url(../images/main/secon_3.jpg);}
-main .second .product:nth-child(4) a {background:url(../images/main/secon_4.jpg);}
+main .second .product:nth-child(1) {background:url(../images/main/secon_1.jpg);}
+main .second .product:nth-child(2) {background:url(../images/main/secon_2.jpg);}
+main .second .product:nth-child(3) {background:url(../images/main/secon_3.jpg);}
+main .second .product:nth-child(4) {background:url(../images/main/secon_4.jpg);}
 /* 세번째행 이미지 */
 main .productCenter {
     background:url(../images/main/main_center_1920.jpg);
-    max-width:100%; height:auto;
+    max-width:100%;
 }
 /* 네번째행 이미지 */
 main .fourth {
-    grid-template-columns:repeat(4,auto);
-    max-width:100%; height:auto;
+    /* grid-template-columns:repeat(4,auto); */
+    /* max-width:100%; */
 }
+main .fourth .product:nth-child(1) {background:url(../images/main/four_1.jpg);}
+main .fourth .product:nth-child(2) {background:url(../images/main/four_2.jpg);}
+main .fourth .product:nth-child(3) {background:url(../images/main/four_3.jpg);}
+main .fourth .product:nth-child(4) {background:url(../images/main/four_4.jpg);}
 /* 다섯번째행 이미지 */
 main .proudctBottom {
     background:url(../images/main/main_bottom_1920.jpg);
-    max-width:100%; height:auto;
+    max-width:100%;
 }
