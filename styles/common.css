@@ -80,16 +80,19 @@ header .headerBottom .subWrapPerfume .subSurvice > a {
     margin-bottom:15px;
 }
 header .headerBottom .subWrapPerfume .subSurvice a img {margin-right:10px;}
-header .headerBottom .subWrapPerfume .subSurvice .lang {background-color: aqua;}
+header .headerBottom .subWrapPerfume .subSurvice .lang {}
 header .headerBottom .subWrapPerfume .subSurvice .lang > a {
     display:flex; justify-content:space-between; align-items:center;
-    padding:10px 0;
+    padding-bottom:10px;
 }
 header .headerBottom .subWrapPerfume .subSurvice .lang a span {
     display:flex; justify-content:space-between; align-items:center;
     border-radius:50%;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang a span img {}
+header .headerBottom .subWrapPerfume .subSurvice .lang a span .nationalFlag {
+    border-radius:50%; width:16px; height:16px;
+    overflow:hidden; margin-right:5px;
+}
 header .headerBottom .subWrapPerfume .subSurvice .lang a img:first-child {
     width:20px;
 }
@@ -100,10 +103,13 @@ header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect {
 }
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a {
     border-bottom:1px solid #dbdde2; padding:5px 0;
-    display:flex;
+    display:flex; align-items:center;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag {border-radius:50%;}
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag img {width:20px;}
+header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag {
+    border-radius:50%; width:16px; height:16px;
+    overflow:hidden; margin-right:5px;
+}
+header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag img {height:100%;}
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a span {}
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a img {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang {}
