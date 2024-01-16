@@ -3,9 +3,12 @@ main {}
 /* mainImg 공통 */
 main .mainImg {
     display:flex; justify-content:space-between;
-    height:80vh; padding:10px;
+    height:80vh; padding:20px; position:relative;
 }
-main .mainImg span {}
+main .mainImg span {
+    position:absolute; bottom:0; padding-bottom:20px;
+}
+main .mainImg span:last-child {right:20px;}
 main .mainImg a {display:block;}
 /* productWrap 공통 */
 main .productWrap {
@@ -16,14 +19,13 @@ main .productWrap .product {
     background-color:lightblue;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
-    width:25%; height:50vh; padding:10px;
+    width:25%; height:50vh; padding:20px;
     background-size:contain; position:relative;
 }
 main .productWrap .product span {
-    position:absolute;
-    left:0; bottom:0;
+    position:absolute; bottom:0; padding-bottom:20px;
 }
-main .productWrap .product span:last-child {position:absolute; right:0;}
+main .productWrap .product span:last-child {right:20px;}
 main .productWrap .product a {display:block;}
 /* 첫번째행 이미지 */
 main .productTop {
