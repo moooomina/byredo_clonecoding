@@ -75,16 +75,32 @@ header .headerBottom .subWrapPerfume .subSurvice {
     padding:21px 19px; width:20%;
     display:flex; flex-flow:column nowrap;
 }
-header .headerBottom .subWrapPerfume .subSurvice a {
+header .headerBottom .subWrapPerfume .subSurvice > a {
     display:flex; align-items:center;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 header .headerBottom .subWrapPerfume .subSurvice a img {margin-right:10px;}
-header .headerBottom .subWrapPerfume .subSurvice .lang {display:none;}
-header .headerBottom .subWrapPerfume .subSurvice .lang a {}
-header .headerBottom .subWrapPerfume .subSurvice .lang a img {}
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect {}
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a {}
+header .headerBottom .subWrapPerfume .subSurvice .lang {background-color: aqua;}
+header .headerBottom .subWrapPerfume .subSurvice .lang > a {
+    display:flex; justify-content:space-between; align-items:center;
+}
+header .headerBottom .subWrapPerfume .subSurvice .lang a span {
+    display:flex; justify-content:space-between; align-items:center;
+}
+header .headerBottom .subWrapPerfume .subSurvice .lang a span img {}
+header .headerBottom .subWrapPerfume .subSurvice .lang a img:first-child {
+    height:20px; width:20px;
+    border-radius:50%;
+}
+header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect {
+    background-color:lawngreen; height:155px; overflow:auto;
+    display:flex; flex-flow:column nowrap;
+    padding:10px; margin-top:15px;
+    border:1px solid #dbdde2;
+}
+header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a {
+    border-bottom:1px solid #dbdde2; padding:5px 0;
+}
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a img {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang a {
@@ -96,8 +112,14 @@ header .headerBottom .subWrapPerfume .subSurvice .enlang a span {
 header .headerBottom .subWrapPerfume .subSurvice .enlang a span img {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang a img {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang a img.more {}
-header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect {}
-header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect a {}
+header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect {
+    margin-top:15px;
+    border:1px solid #dbdde2;
+}
+header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect a {
+    border-bottom:1px solid #dbdde2; padding:10px;
+}
+header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect a:last-child {border-bottom:none;}
 header .headerBottom .subWrapMakeup {display:none;}
 header .headerBottom .subWrapMakeup ul {}
 header .headerBottom .subWrapMakeup ul .subTitle {}
