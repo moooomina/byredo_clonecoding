@@ -4,6 +4,7 @@ main {}
 main .mainImg {
     display:flex; justify-content:space-between;
     height:80vh; padding:20px; position:relative;
+    background-size:cover;
 }
 main .mainImg span {
     position:absolute; bottom:0; padding-bottom:15px;
@@ -21,6 +22,7 @@ main .productWrap .product {
     justify-content:space-between;
     width:25%; height:50vh; padding:20px;
     background-size:cover; position:relative;
+    background-position:center;
 }
 main .productWrap .product span {
     position:absolute; bottom:0; padding-bottom:15px;

@@ -38,7 +38,7 @@ header .headerBottom .subWrapPerfume {
     border-top:1px solid #f5f5f5;
     display:flex;
     position:absolute; top:100%; left:0; width:100%;
-    /* display:none; */
+    display:none;
 }
 header .headerBottom .subWrapPerfume ul {
     border-right:1px solid #f5f5f5;
@@ -100,7 +100,7 @@ header .headerBottom .subWrapPerfume .subSurvice .lang a span .nationalFlag {
 header .headerBottom .subWrapPerfume .subSurvice .lang a img:first-child {
     width:23px; transform:translateX(-10%);
 }
-/* 언어 선택 */
+/* 언어 선택창 */
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect {
     background-color:#fff; height:155px; overflow:auto;
     display:flex; flex-flow:column nowrap;
@@ -335,4 +335,126 @@ header .sideOpen .sideMenu .sideMenuBottom .mypage {}
 header .sideOpen .sideMenu .sideMenuBottom .mypage a {}
 header .sideOpen .sideMenu .sideMenuBottom .mypage a img {}
 /* footer */
-footer {display:none;}
+footer {}
+footer .footerTop {
+    padding:30px 15px; display:flex; background-color:#f7f7f7;
+}
+/* 1번째 단 */
+footer .footerTop .left {width:25%; padding:0 24px 7px;}
+footer .footerTop .left .leftTop {}
+/* 언어선택 */
+footer .footerTop .left .leftTop .lang {}
+footer .footerTop .left .leftTop .lang > a {
+    display:flex; align-items:center;
+    padding-bottom:10px;
+}
+footer .footerTop .left .leftTop .lang a span {
+    display:flex; justify-content:space-between; align-items:center;
+    border-radius:50%;
+}
+footer .footerTop .left .leftTop .lang a span .nationalFlag {
+    border-radius:50%; width:18px; height:18px;
+    overflow:hidden; margin-right:10px;
+}
+footer .footerTop .left .leftTop .lang a img:first-child {
+    width:23px; transform:translateX(-10%);
+}
+footer .footerTop .left .leftTop .lang a span .nationalFlag img {}
+footer .footerTop .left .leftTop .lang a span span {}
+footer .footerTop .left .leftTop .lang a img {}
+/* 언어 선택창 */
+footer .footerTop .left .leftTop .lang .langSelect {
+    background-color:#fff; height:155px; overflow:auto; width:200px;
+    display:flex; flex-flow:column nowrap;
+    border:1px solid #dbdde2; 
+    /* display:none; */
+}
+footer .footerTop .left .leftTop .lang .langSelect > a {}
+footer .footerTop .left .leftTop .lang .langSelect a {
+    border-bottom:1px solid #dbdde2; padding:5px 0;
+    display:flex; align-items:center;
+}
+footer .footerTop .left .leftTop .lang .langSelect a .nationalFlag {
+    border-radius:50%; width:18px; height:18px;
+    overflow:hidden; margin-right:10px;
+}
+footer .footerTop .left .leftTop .lang .langSelect a .nationalFlag img {
+    height:100%; transform:translateX(-10%);
+}
+footer .footerTop .left .leftTop .lang .langSelect a .nationalFlag span {}
+/* 영어 선택 */
+footer .footerTop .left .leftTop .enlang {margin-top:5px;}
+footer .footerTop .left .leftTop .enlang a {
+    display:flex; justify-content:space-between; align-items:center;
+    background-color:#fff; border:1px solid #dbdde2;
+}
+footer .footerTop .left .leftTop .enlang a span {
+    display:flex; justify-content:space-between; align-items:center;
+}
+footer .footerTop .left .leftTop .enlang a span img {}
+footer .footerTop .left .leftTop .enlang a img {}
+/* 영어 선택 - 창 */
+footer .footerTop .left .leftTop .enlang .enSelect {
+    margin-top:15px;
+    border:1px solid #dbdde2;
+    display:none;
+}
+footer .footerTop .left .leftTop .enlang .enSelect a {
+    border-bottom:1px solid #dbdde2; padding:10px;
+}
+footer .footerTop .left .leftTop .enlang .enSelect a:last-child {border-bottom:none;}
+footer .footerTop .left .leftTop a {}
+footer .footerTop .left .leftTop a img {}
+footer .footerTop .left .leftBottom {}
+footer .footerTop .left .leftBottom h2 {}
+footer .footerTop .left .leftBottom a {}
+footer .footerTop .left .leftBottom a img {}
+/* footer 묶음 공통 */
+footer .footerTop .help, footer .footerTop .exclusive, footer .footerTop .right {
+    width:25%; padding:0 24px 7px; display:flex; flex-flow:column nowrap;
+}
+/* footer 제목 공통 */
+footer .footerTop .help h2, footer .footerTop .exclusive h2, footer .footerTop .right .store h2, footer .footerTop .right .stay h2 {line-height:2;}
+/* footer 글씨 공통 */
+footer .footerTop .help a, footer .footerTop .exclusive p, footer .footerTop .right .store a {
+    font-size:0.85rem; line-height:2.5;
+}
+/* 2번째 단 */
+footer .footerTop .help {}
+footer .footerTop .help h2 {}
+footer .footerTop .help a {}
+/* 3번째 단 */
+footer .footerTop .exclusive {}
+footer .footerTop .exclusive h2 {}
+footer .footerTop .exclusive p {}
+/* 4번째 단 */
+footer .footerTop .right {}
+footer .footerTop .right .store {margin-bottom:20px;}
+footer .footerTop .right .store h2 {}
+footer .footerTop .right .store a {}
+footer .footerTop .right .stay {}
+footer .footerTop .right .stay h2 {}
+footer .footerTop .right .stay p {font-size:0.85rem;}
+footer .footerTop .right .stay #searchFrm {}
+footer .footerTop .right .stay #searchFrm fieldset {}
+footer .footerTop .right .stay #searchFrm fieldset .emailTxt {
+    border:1px solid #8b8c9c; padding:10px; width:80%; margin:10px 0;
+}
+footer .footerTop .right .stay #searchFrm fieldset #ok {
+    background-color:#000; color:#fff; padding:10px;
+    border:1px solid #000;
+}
+footer .footerTop .right .stay .subTxt {font-size:0.75rem; line-height:1.5;}
+footer .footerTop .right .stay .subTxt a {font-size:0.75rem; border-bottom:1px solid #888;}
+/* footer-bottom */
+footer .footerBottom {
+    display:flex; background-color:#fafafa;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px; 
+}
+footer .footerBottom p {font-size:0.8rem;}
+footer .footerBottom .sns {}
+footer .footerBottom .sns a {}
+footer .footerBottom .sns a img {width:16px;}
+footer .footerBottom .sns a:first-child img {margin-right:20px;}
