@@ -6,7 +6,7 @@ main .mainImg {
     height:80vh; padding:20px; position:relative;
 }
 main .mainImg span {
-    position:absolute; bottom:0; padding-bottom:20px;
+    position:absolute; bottom:0; padding-bottom:15px;
 }
 main .mainImg span:last-child {right:20px;}
 main .mainImg a {display:block;}
@@ -23,7 +23,7 @@ main .productWrap .product {
     background-size:cover; position:relative;
 }
 main .productWrap .product span {
-    position:absolute; bottom:0; padding-bottom:20px;
+    position:absolute; bottom:0; padding-bottom:15px;
 }
 main .productWrap .product span:last-child {right:20px;}
 main .productWrap .product a {display:block;}

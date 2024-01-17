@@ -27,14 +27,18 @@ header .headerBottom h1 a img {}
 header .headerBottom nav {}
 header .headerBottom nav #gnb {display:flex;}
 header .headerBottom nav #gnb .menuTitle {}
+header .headerBottom nav #gnb:nth-child(1):hover .subWrapPerfume {display:flex;}
+header .headerBottom nav #gnb .menuTitle a:nth-child(1):hover {}
 header .headerBottom nav #gnb .menuTitle a {
     padding:18px 20px 16px; font-size:1.188rem;
 }
+/* 아래 하단바, 마우스 올리면 나타나게 */
 header .headerBottom .subWrapPerfume {
-    background-color: lightcoral;
+    background-color:#fff;
     border-top:1px solid #f5f5f5;
     display:flex;
     position:absolute; top:100%; left:0; width:100%;
+    /* display:none; */
 }
 header .headerBottom .subWrapPerfume ul {
     border-right:1px solid #f5f5f5;
@@ -90,29 +94,35 @@ header .headerBottom .subWrapPerfume .subSurvice .lang a span {
     border-radius:50%;
 }
 header .headerBottom .subWrapPerfume .subSurvice .lang a span .nationalFlag {
-    border-radius:50%; width:16px; height:16px;
-    overflow:hidden; margin-right:5px;
+    border-radius:50%; width:18px; height:18px;
+    overflow:hidden; margin-right:10px;
 }
 header .headerBottom .subWrapPerfume .subSurvice .lang a img:first-child {
-    width:20px;
+    width:23px; transform:translateX(-10%);
 }
+/* 언어 선택 */
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect {
-    background-color:lightgoldenrodyellow; height:155px; overflow:auto;
+    background-color:#fff; height:155px; overflow:auto;
     display:flex; flex-flow:column nowrap;
     border:1px solid #dbdde2;
+    display:none;
 }
+header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect > a {}
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a {
     border-bottom:1px solid #dbdde2; padding:5px 0;
     display:flex; align-items:center;
 }
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag {
-    border-radius:50%; width:16px; height:16px;
-    overflow:hidden; margin-right:5px;
+    border-radius:50%; width:18px; height:18px;
+    overflow:hidden; margin-right:10px;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag img {height:100%;}
+header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag img {
+    height:100%; transform:translateX(-10%);
+}
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a span {}
 header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a img {}
-header .headerBottom .subWrapPerfume .subSurvice .enlang {}
+/* 영어 선택 */
+header .headerBottom .subWrapPerfume .subSurvice .enlang {margin-top:5px;}
 header .headerBottom .subWrapPerfume .subSurvice .enlang a {
     display:flex; justify-content:space-between; align-items:center;
 }
@@ -122,9 +132,11 @@ header .headerBottom .subWrapPerfume .subSurvice .enlang a span {
 header .headerBottom .subWrapPerfume .subSurvice .enlang a span img {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang a img {}
 header .headerBottom .subWrapPerfume .subSurvice .enlang a img.more {}
+/* 영어 선택 - 창 */
 header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect {
     margin-top:15px;
     border:1px solid #dbdde2;
+    display:none;
 }
 header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect a {
     border-bottom:1px solid #dbdde2; padding:10px;
