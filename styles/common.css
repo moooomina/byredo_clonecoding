@@ -27,172 +27,223 @@ header .headerBottom h1 a img {}
 header .headerBottom nav {}
 header .headerBottom nav #gnb {display:flex;}
 header .headerBottom nav #gnb .menuTitle {}
-header .headerBottom nav #gnb:nth-child(1):hover .subWrapPerfume {display:flex;}
+header .headerBottom nav #gnb:nth-child(1):hover .subWrap {display:flex;}
 header .headerBottom nav #gnb .menuTitle a:nth-child(1):hover {}
 header .headerBottom nav #gnb .menuTitle a {
     padding:18px 20px 16px; font-size:1.188rem;
 }
+/* -------------------------subWrap 공통---------------------------------- */
 /* 아래 하단바, 마우스 올리면 나타나게 */
-header .headerBottom .subWrapPerfume {
+header .headerBottom .subWrap {
     background-color:#fff;
     border-top:1px solid #f5f5f5;
     display:flex;
     position:absolute; top:100%; left:0; width:100%;
     /* display:none; */
 }
-header .headerBottom .subWrapPerfume ul {
+header .headerBottom .subWrap ul {
     border-right:1px solid #f5f5f5;
     padding:21px 19px;
     width:calc(100%/6);
 }
-header .headerBottom .subWrapPerfume ul .subTitle {
+header .headerBottom .subWrap ul .subTitle {
     font-size:1.188rem;
     margin-bottom:14px;
 }
-header .headerBottom .subWrapPerfume ul li {margin-bottom:14px;}
-header .headerBottom .subWrapPerfume ul li a {
+header .headerBottom .subWrap ul li {margin-bottom:14px;}
+header .headerBottom .subWrap ul li a {
     font-size:0.875rem;
 }
-/* 향수-sub-이미지 */
-header .headerBottom .subWrapPerfume .subImg {
+/* sub-이미지 */
+header .headerBottom .subWrap .subImg {
     border-right:1px solid #f5f5f5;
     padding:21px 19px; width:40%;
     display:flex; flex-flow:row nowrap; margin:0 auto;
 }
-/* 향수-sub-이미지 공통부분 */
-header .headerBottom .subWrapPerfume .subImg a {
+/* sub-이미지 공통부분 */
+header .headerBottom .subWrap .subImg a {
     display:flex; flex-flow:column nowrap;
     margin-right:15px;
 }
-header .headerBottom .subWrapPerfume .subImg a img {
+header .headerBottom .subWrap .subImg a img {
     width:100%; margin-bottom:10px;
 }
-/* 향수-sub-이미지 왼쪽 */
-header .headerBottom .subWrapPerfume .subImg .imgLeft {}
-header .headerBottom .subWrapPerfume .subImg .imgLeft img {}
-/* 향수-sub-이미지 오른쪽 */
-header .headerBottom .subWrapPerfume .subImg .imgRight {margin-right:0;}
-header .headerBottom .subWrapPerfume .subImg .imgRight img {}
-/* 향수-sub-맨 오른쪽 서비스 */
-header .headerBottom .subWrapPerfume .subSurvice {
+/* sub-이미지 왼쪽 */
+header .headerBottom .subWrap .subImg .imgLeft {}
+header .headerBottom .subWrap .subImg .imgLeft img {}
+/* sub-이미지 오른쪽 */
+header .headerBottom .subWrap .subImg .imgRight {margin-right:0;}
+header .headerBottom .subWrap .subImg .imgRight img {}
+/* sub-맨 오른쪽 서비스 */
+header .headerBottom .subWrap .subSurvice {
     border-right:1px solid #f5f5f5;
     padding:21px 19px; width:20%;
     display:flex; flex-flow:column nowrap;
 }
-header .headerBottom .subWrapPerfume .subSurvice > a {
+header .headerBottom .subWrap .subSurvice > a {
     display:flex; align-items:center;
     margin-bottom:15px;
 }
-header .headerBottom .subWrapPerfume .subSurvice a img {margin-right:10px;}
-header .headerBottom .subWrapPerfume .subSurvice .lang {}
-header .headerBottom .subWrapPerfume .subSurvice .lang > a {
+header .headerBottom .subWrap .subSurvice a img {margin-right:10px;}
+header .headerBottom .subWrap .subSurvice .lang {}
+header .headerBottom .subWrap .subSurvice .lang > a {
     display:flex; justify-content:space-between; align-items:center;
     padding-bottom:10px;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang a span {
+header .headerBottom .subWrap .subSurvice .lang a span {
     display:flex; justify-content:space-between; align-items:center;
     border-radius:50%;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang a span .nationalFlag {
+header .headerBottom .subWrap .subSurvice .lang a span .nationalFlag {
     border-radius:50%; width:18px; height:18px;
     overflow:hidden; margin-right:10px;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang a img:first-child {
+header .headerBottom .subWrap .subSurvice .lang a img:first-child {
     width:23px; transform:translateX(-10%);
 }
 /* 언어 선택창 */
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect {
+header .headerBottom .subWrap .subSurvice .lang .langSelect {
     background-color:#fff; height:155px; overflow:auto;
     display:flex; flex-flow:column nowrap;
     border:1px solid #dbdde2;
     display:none;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect > a {}
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a {
+header .headerBottom .subWrap .subSurvice .lang .langSelect > a {}
+header .headerBottom .subWrap .subSurvice .lang .langSelect a {
     border-bottom:1px solid #dbdde2; padding:5px 0;
     display:flex; align-items:center;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag {
+header .headerBottom .subWrap .subSurvice .lang .langSelect a .nationalFlag {
     border-radius:50%; width:18px; height:18px;
     overflow:hidden; margin-right:10px;
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a .nationalFlag img {
+header .headerBottom .subWrap .subSurvice .lang .langSelect a .nationalFlag img {
     height:100%; transform:translateX(-10%);
 }
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a span {}
-header .headerBottom .subWrapPerfume .subSurvice .lang .langSelect a img {}
+header .headerBottom .subWrap .subSurvice .lang .langSelect a span {}
+header .headerBottom .subWrap .subSurvice .lang .langSelect a img {}
 /* 영어 선택 */
-header .headerBottom .subWrapPerfume .subSurvice .enlang {margin-top:5px;}
-header .headerBottom .subWrapPerfume .subSurvice .enlang a {
+header .headerBottom .subWrap .subSurvice .enlang {margin-top:5px;}
+header .headerBottom .subWrap .subSurvice .enlang a {
     display:flex; justify-content:space-between; align-items:center;
 }
-header .headerBottom .subWrapPerfume .subSurvice .enlang a span {
+header .headerBottom .subWrap .subSurvice .enlang a span {
     display:flex; justify-content:space-between; align-items:center;
 }
-header .headerBottom .subWrapPerfume .subSurvice .enlang a span img {}
-header .headerBottom .subWrapPerfume .subSurvice .enlang a img {}
-header .headerBottom .subWrapPerfume .subSurvice .enlang a img.more {}
+header .headerBottom .subWrap .subSurvice .enlang a span img {}
+header .headerBottom .subWrap .subSurvice .enlang a img {}
+header .headerBottom .subWrap .subSurvice .enlang a img.more {}
 /* 영어 선택 - 창 */
-header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect {
+header .headerBottom .subWrap .subSurvice .enlang .enSelect {
     margin-top:15px;
     border:1px solid #dbdde2;
     display:none;
 }
-header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect a {
+header .headerBottom .subWrap .subSurvice .enlang .enSelect a {
     border-bottom:1px solid #dbdde2; padding:10px;
 }
-header .headerBottom .subWrapPerfume .subSurvice .enlang .enSelect a:last-child {border-bottom:none;}
-header .headerBottom .subWrapMakeup {display:none;}
-header .headerBottom .subWrapMakeup ul {}
-header .headerBottom .subWrapMakeup ul .subTitle {}
-header .headerBottom .subWrapMakeup ul li {}
-header .headerBottom .subWrapMakeup ul li a {}
-header .headerBottom .subWrapMakeup .subImg {}
-header .headerBottom .subWrapMakeup .subImg a {}
-header .headerBottom .subWrapMakeup .subImg .imgLeft {}
-header .headerBottom .subWrapMakeup .subImg .imgLeft img {}
-header .headerBottom .subWrapMakeup .subImg .imgRight {}
-header .headerBottom .subWrapMakeup .subImg .imgRight img {}
-header .headerBottom .subWrapMakeup .subSurvice {}
-header .headerBottom .subWrapMakeup .subSurvice a {}
-header .headerBottom .subWrapMakeup .subSurvice a img {}
-header .headerBottom .subWrapMakeup .subSurvice .lang {}
-header .headerBottom .subWrapMakeup .subSurvice .lang a {}
-header .headerBottom .subWrapMakeup .subSurvice .lang a img {}
-header .headerBottom .subWrapMakeup .subSurvice .lang .langSelect {}
-header .headerBottom .subWrapMakeup .subSurvice .lang .langSelect a {}
-header .headerBottom .subWrapMakeup .subSurvice .lang .langSelect a img {}
-header .headerBottom .subWrapMakeup .subSurvice .enlang {}
-header .headerBottom .subWrapMakeup .subSurvice .enlang a {}
-header .headerBottom .subWrapMakeup .subSurvice .enlang a img {}
-header .headerBottom .subWrapMakeup .subSurvice .enlang .enSelect {}
-header .headerBottom .subWrapMakeup .subSurvice .enlang .enSelect a {}
-header .headerBottom .subWrapHome {display:none;}
-header .headerBottom .subWrapHome ul {}
-header .headerBottom .subWrapHome ul .subTitle {}
-header .headerBottom .subWrapHome ul li {}
-header .headerBottom .subWrapHome ul li a {}
-header .headerBottom .subWrapHome .subImg {}
-header .headerBottom .subWrapHome .subImg a {}
-header .headerBottom .subWrapHome .subImg .imgLeft {}
-header .headerBottom .subWrapHome .subImg .imgLeft img {}
-header .headerBottom .subWrapHome .subImg .imgRight {}
-header .headerBottom .subWrapHome .subImg .imgRight img {}
-header .headerBottom .subWrapHome .subSurvice {}
-header .headerBottom .subWrapHome .subSurvice a {}
-header .headerBottom .subWrapHome .subSurvice a img {}
-header .headerBottom .subWrapHome .subSurvice .lang {}
-header .headerBottom .subWrapHome .subSurvice .lang a {}
-header .headerBottom .subWrapHome .subSurvice .lang a img {}
-header .headerBottom .subWrapHome .subSurvice .lang .langSelect {}
-header .headerBottom .subWrapHome .subSurvice .lang .langSelect a {}
-header .headerBottom .subWrapHome .subSurvice .lang .langSelect a img {}
-header .headerBottom .subWrapHome .subSurvice .enlang {}
-header .headerBottom .subWrapHome .subSurvice .enlang a {}
-header .headerBottom .subWrapHome .subSurvice .enlang a img {}
-header .headerBottom .subWrapHome .subSurvice .enlang .enSelect {}
-header .headerBottom .subWrapHome .subSurvice .enlang .enSelect a {}
-header .headerBottom .subWrapCare {display:none;}
+header .headerBottom .subWrap .subSurvice .enlang .enSelect a:last-child {border-bottom:none;}
+/* -------------------------subWrap 공통 끝---------------------------------- */
+/* -------------------------subWrap 개별---------------------------------- */
+/* 아래 하단바, 마우스 올리면 나타나게 */
+header .headerBottom .perfume {}
+header .headerBottom .perfume ul {}
+header .headerBottom .perfume ul .subTitle {}
+header .headerBottom .perfume ul li {}
+header .headerBottom .perfume ul li a {}
+/* 향수-sub-이미지 */
+header .headerBottom .perfume .subImg {}
+/* 향수-sub-이미지 공통부분 */
+header .headerBottom .perfume .subImg a {}
+header .headerBottom .perfume .subImg a img {}
+/* 향수-sub-이미지 왼쪽 */
+header .headerBottom .perfume .subImg .imgLeft {}
+header .headerBottom .perfume .subImg .imgLeft img {}
+/* 향수-sub-이미지 오른쪽 */
+header .headerBottom .perfume .subImg .imgRight {}
+header .headerBottom .perfume .subImg .imgRight img {}
+/* 향수-sub-맨 오른쪽 서비스 */
+header .headerBottom .perfume .subSurvice {}
+header .headerBottom .perfume .subSurvice > a {}
+header .headerBottom .perfume .subSurvice a img {}
+header .headerBottom .perfume .subSurvice .lang {}
+header .headerBottom .perfume .subSurvice .lang > a {}
+header .headerBottom .perfume .subSurvice .lang a span {}
+header .headerBottom .perfume .subSurvice .lang a span .nationalFlag {}
+header .headerBottom .perfume .subSurvice .lang a img:first-child {}
+/* 언어 선택창 */
+header .headerBottom .perfume .subSurvice .lang .langSelect {}
+header .headerBottom .perfume .subSurvice .lang .langSelect > a {}
+header .headerBottom .perfume .subSurvice .lang .langSelect a {}
+header .headerBottom .perfume .subSurvice .lang .langSelect a .nationalFlag {}
+header .headerBottom .perfume .subSurvice .lang .langSelect a .nationalFlag img {}
+header .headerBottom .perfume .subSurvice .lang .langSelect a span {}
+header .headerBottom .perfume .subSurvice .lang .langSelect a img {}
+/* 영어 선택 */
+header .headerBottom .perfume .subSurvice .enlang {}
+header .headerBottom .perfume .subSurvice .enlang a {}
+header .headerBottom .perfume .subSurvice .enlang a span {}
+header .headerBottom .perfume .subSurvice .enlang a span img {}
+header .headerBottom .perfume .subSurvice .enlang a img {}
+header .headerBottom .perfume .subSurvice .enlang a img.more {}
+/* 영어 선택 - 창 */
+header .headerBottom .perfume .subSurvice .enlang .enSelect {}
+header .headerBottom .perfume .subSurvice .enlang .enSelect a {}
+header .headerBottom .perfume .subSurvice .enlang .enSelect a:last-child {}
+/* 메이크업 */
+header .headerBottom .makeup {}
+header .headerBottom .makeup ul {}
+header .headerBottom .makeup ul .subTitle {}
+header .headerBottom .makeup ul li {}
+header .headerBottom .makeup ul li a {}
+header .headerBottom .makeup .subImg {}
+header .headerBottom .makeup .subImg a {}
+header .headerBottom .makeup .subImg .imgLeft {}
+header .headerBottom .makeup .subImg .imgLeft img {}
+header .headerBottom .makeup .subImg .imgRight {}
+header .headerBottom .makeup .subImg .imgRight img {}
+header .headerBottom .makeup .subSurvice {}
+header .headerBottom .makeup .subSurvice a {}
+header .headerBottom .makeup .subSurvice a img {}
+header .headerBottom .makeup .subSurvice .lang {}
+header .headerBottom .makeup .subSurvice .lang a {}
+header .headerBottom .makeup .subSurvice .lang a img {}
+header .headerBottom .makeup .subSurvice .lang .langSelect {}
+header .headerBottom .makeup .subSurvice .lang .langSelect a {}
+header .headerBottom .makeup .subSurvice .lang .langSelect a img {}
+header .headerBottom .makeup .subSurvice .enlang {}
+header .headerBottom .makeup .subSurvice .enlang a {}
+header .headerBottom .makeup .subSurvice .enlang a img {}
+header .headerBottom .makeup .subSurvice .enlang .enSelect {}
+header .headerBottom .makeup .subSurvice .enlang .enSelect a {}
+/* 홈프라그란스 */
+header .headerBottom .home {}
+header .headerBottom .home ul {}
+header .headerBottom .home ul .subTitle {}
+header .headerBottom .home ul li {}
+header .headerBottom .home ul li a {}
+header .headerBottom .home .subImg {}
+header .headerBottom .home .subImg a {}
+header .headerBottom .home .subImg .imgLeft {}
+header .headerBottom .home .subImg .imgLeft img {}
+header .headerBottom .home .subImg .imgRight {}
+header .headerBottom .home .subImg .imgRight img {}
+header .headerBottom .home .subSurvice {}
+header .headerBottom .home .subSurvice a {}
+header .headerBottom .home .subSurvice a img {}
+header .headerBottom .home .subSurvice .lang {}
+header .headerBottom .home .subSurvice .lang a {}
+header .headerBottom .home .subSurvice .lang a img {}
+header .headerBottom .home .subSurvice .lang .langSelect {}
+header .headerBottom .home .subSurvice .lang .langSelect a {}
+header .headerBottom .home .subSurvice .lang .langSelect a img {}
+header .headerBottom .home .subSurvice .enlang {}
+header .headerBottom .home .subSurvice .enlang a {}
+header .headerBottom .home .subSurvice .enlang a img {}
+header .headerBottom .home .subSurvice .enlang .enSelect {}
+header .headerBottom .home .subSurvice .enlang .enSelect a {}
+/* 핸드바디케어 */
+header .headerBottom .subWrapCare {}
 header .headerBottom .subWrapCare ul {}
 header .headerBottom .subWrapCare ul .subTitle {}
 header .headerBottom .subWrapCare ul li {}
@@ -217,31 +268,32 @@ header .headerBottom .subWrapCare .subSurvice .enlang a {}
 header .headerBottom .subWrapCare .subSurvice .enlang a img {}
 header .headerBottom .subWrapCare .subSurvice .enlang .enSelect {}
 header .headerBottom .subWrapCare .subSurvice .enlang .enSelect a {}
-header .headerBottom .subWrapProduct {display:none;}
-header .headerBottom .subWrapsubWrapProductCare ul {}
-header .headerBottom .subWrapProduct ul .subTitle {}
-header .headerBottom .subWrapProduct ul li {}
-header .headerBottom .subWrapProduct ul li a {}
-header .headerBottom .subWrapProduct .subImg {}
-header .headerBottom .subWrapProduct .subImg a {}
-header .headerBottom .subWrapProduct .subImg .imgLeft {}
-header .headerBottom .subWrapProduct .subImg .imgLeft img {}
-header .headerBottom .subWrapProduct .subImg .imgRight {}
-header .headerBottom .subWrapProduct .subImg .imgRight img {}
-header .headerBottom .subWrapProduct .subSurvice {}
-header .headerBottom .subWrapProduct .subSurvice a {}
-header .headerBottom .subWrapProduct .subSurvice a img {}
-header .headerBottom .subWrapProduct .subSurvice .lang {}
-header .headerBottom .subWrapProduct .subSurvice .lang a {}
-header .headerBottom .subWrapProduct .subSurvice .lang a img {}
-header .headerBottom .subWrapProduct .subSurvice .lang .langSelect {}
-header .headerBottom .subWrapProduct .subSurvice .lang .langSelect a {}
-header .headerBottom .subWrapProduct .subSurvice .lang .langSelect a img {}
-header .headerBottom .subWrapProduct .subSurvice .enlang {}
-header .headerBottom .subWrapProduct .subSurvice .enlang a {}
-header .headerBottom .subWrapProduct .subSurvice .enlang a img {}
-header .headerBottom .subWrapProduct .subSurvice .enlang .enSelect {}
-header .headerBottom .subWrapProduct .subSurvice .enlang .enSelect a {}
+/* 바이프로덕트 */
+header .headerBottom .product {}
+header .headerBottom .product ul {}
+header .headerBottom .product ul .subTitle {}
+header .headerBottom .product ul li {}
+header .headerBottom .product ul li a {}
+header .headerBottom .product .subImg {}
+header .headerBottom .product .subImg a {}
+header .headerBottom .product .subImg .imgLeft {}
+header .headerBottom .product .subImg .imgLeft img {}
+header .headerBottom .product .subImg .imgRight {}
+header .headerBottom .product .subImg .imgRight img {}
+header .headerBottom .product .subSurvice {}
+header .headerBottom .product .subSurvice a {}
+header .headerBottom .product .subSurvice a img {}
+header .headerBottom .product .subSurvice .lang {}
+header .headerBottom .product .subSurvice .lang a {}
+header .headerBottom .product .subSurvice .lang a img {}
+header .headerBottom .product .subSurvice .lang .langSelect {}
+header .headerBottom .product .subSurvice .lang .langSelect a {}
+header .headerBottom .product .subSurvice .lang .langSelect a img {}
+header .headerBottom .product .subSurvice .enlang {}
+header .headerBottom .product .subSurvice .enlang a {}
+header .headerBottom .product .subSurvice .enlang a img {}
+header .headerBottom .product .subSurvice .enlang .enSelect {}
+header .headerBottom .product .subSurvice .enlang .enSelect a {}
 /* 헤더 오른쪽 (아이콘) */
 header .headerBottom .icon {
     display:flex; align-items:center;
@@ -293,31 +345,36 @@ header .sideOpen .sideMenu .m_navOpen #m_gnb {}
 header .sideOpen .sideMenu .m_navOpen #m_gnb li {}
 header .sideOpen .sideMenu .m_navOpen #m_gnb li a {}
 header .sideOpen .sideMenu .m_navOpen #m_gnb li a img {}
+/* m_subWrap 공통 */
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrap {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrap ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrap ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrap ul li {}
 /* m_향수 */
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapPerfume {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapPerfume ul {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapPerfume ul .subTitle {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapPerfume ul li {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_perfume {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_perfume ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_perfume ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_perfume ul li {}
 /* m_메이크업 */
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapMakeup {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapMakeup ul {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapMakeup ul .subTitle {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapMakeup ul li {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_makeup {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_makeup ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_makeup ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_makeup ul li {}
 /* m_홈프라그란스 */
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapHome {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapHome ul {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapHome ul .subTitle {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapHome ul li {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_home {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_home ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_home ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_home ul li {}
 /* m_핸드바디케어 */
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapCare {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapCare ul {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapCare ul .subTitle {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapCare ul li {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_care {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_care ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_care ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_care ul li {}
 /* m_바이프로덕트 */
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapProduct {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapProduct ul {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapProduct ul .subTitle {}
-header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_subWrapProduct ul li {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_product {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_product ul {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_product ul .subTitle {}
+header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_product ul li {}
 /* sideMenuBottom */
 header .sideOpen .sideMenu .sideMenuBottom {}
 header .sideOpen .sideMenu .sideMenuBottom .lang {}
@@ -334,6 +391,7 @@ header .sideOpen .sideMenu .sideMenuBottom .enlang .enSelect a {}
 header .sideOpen .sideMenu .sideMenuBottom .mypage {}
 header .sideOpen .sideMenu .sideMenuBottom .mypage a {}
 header .sideOpen .sideMenu .sideMenuBottom .mypage a img {}
+
 /* footer */
 footer {}
 footer .footerTop {
@@ -343,14 +401,14 @@ footer .footerTop {
 footer .footerTop .left {width:25%; padding:0 24px 7px;}
 footer .footerTop .left .leftTop {}
 /* 언어선택 */
-footer .footerTop .left .leftTop .lang {}
+footer .footerTop .left .leftTop .lang {width:200px;}
 footer .footerTop .left .leftTop .lang > a {
-    display:flex; align-items:center;
-    padding-bottom:10px;
+    display:flex; justify-content:space-between; align-items:center;
+    background-color:#fff; border:1px solid #dbdde2; padding:10px;
 }
 footer .footerTop .left .leftTop .lang a span {
     display:flex; justify-content:space-between; align-items:center;
-    border-radius:50%;
+    border-radius:50%; font-size:0.85rem;
 }
 footer .footerTop .left .leftTop .lang a span .nationalFlag {
     border-radius:50%; width:18px; height:18px;
@@ -366,57 +424,62 @@ footer .footerTop .left .leftTop .lang a img {}
 footer .footerTop .left .leftTop .lang .langSelect {
     background-color:#fff; height:155px; overflow:auto; width:200px;
     display:flex; flex-flow:column nowrap;
-    border:1px solid #dbdde2; 
+    border:1px solid #dbdde2;
     /* display:none; */
 }
 footer .footerTop .left .leftTop .lang .langSelect > a {}
 footer .footerTop .left .leftTop .lang .langSelect a {
-    border-bottom:1px solid #dbdde2; padding:5px 0;
-    display:flex; align-items:center;
+    border-bottom:1px solid #dbdde2; padding:10px 0;
+    display:flex; align-items:center; 
 }
 footer .footerTop .left .leftTop .lang .langSelect a .nationalFlag {
     border-radius:50%; width:18px; height:18px;
-    overflow:hidden; margin-right:10px;
+    overflow:hidden; margin:0 10px;
 }
 footer .footerTop .left .leftTop .lang .langSelect a .nationalFlag img {
     height:100%; transform:translateX(-10%);
 }
-footer .footerTop .left .leftTop .lang .langSelect a .nationalFlag span {}
+footer .footerTop .left .leftTop .lang .langSelect a span {font-size:0.85rem;}
 /* 영어 선택 */
-footer .footerTop .left .leftTop .enlang {margin-top:5px;}
+footer .footerTop .left .leftTop .enlang {margin-top:5px; width:200px;}
 footer .footerTop .left .leftTop .enlang a {
     display:flex; justify-content:space-between; align-items:center;
-    background-color:#fff; border:1px solid #dbdde2;
+    background-color:#fff; border:1px solid #dbdde2; padding:10px;
 }
 footer .footerTop .left .leftTop .enlang a span {
-    display:flex; justify-content:space-between; align-items:center;
+    display:flex; justify-content:space-between; align-items:center; font-size:0.85rem;
 }
-footer .footerTop .left .leftTop .enlang a span img {}
+footer .footerTop .left .leftTop .enlang a span img {margin-right:10px;}
 footer .footerTop .left .leftTop .enlang a img {}
 /* 영어 선택 - 창 */
 footer .footerTop .left .leftTop .enlang .enSelect {
-    margin-top:15px;
+    width:200px;
     border:1px solid #dbdde2;
-    display:none;
+    /* display:none; */
 }
 footer .footerTop .left .leftTop .enlang .enSelect a {
-    border-bottom:1px solid #dbdde2; padding:10px;
+    border-bottom:1px solid #dbdde2; padding:10px; font-size:0.85rem;
 }
 footer .footerTop .left .leftTop .enlang .enSelect a:last-child {border-bottom:none;}
-footer .footerTop .left .leftTop a {}
-footer .footerTop .left .leftTop a img {}
-footer .footerTop .left .leftBottom {}
+/* Account */
+footer .footerTop .left .leftTop > a {
+    padding:10px 0; font-size:0.85rem;
+    display:flex; align-items:center; margin-bottom:20px;
+}
+footer .footerTop .left .leftTop > a img {width:16px; margin-right:10px;}
+/* Customer care(아래 내용) */
+footer .footerTop .left .leftBottom {display:flex; flex-flow:column nowrap;}
 footer .footerTop .left .leftBottom h2 {}
-footer .footerTop .left .leftBottom a {}
-footer .footerTop .left .leftBottom a img {}
+footer .footerTop .left .leftBottom a {display:flex; align-items:center;}
+footer .footerTop .left .leftBottom a img {width:16px; margin-right:10px;}
 /* footer 묶음 공통 */
 footer .footerTop .help, footer .footerTop .exclusive, footer .footerTop .right {
     width:25%; padding:0 24px 7px; display:flex; flex-flow:column nowrap;
 }
 /* footer 제목 공통 */
-footer .footerTop .help h2, footer .footerTop .exclusive h2, footer .footerTop .right .store h2, footer .footerTop .right .stay h2 {line-height:2;}
+footer .footerTop .help h2, footer .footerTop .exclusive h2, footer .footerTop .right .store h2, footer .footerTop .right .stay h2, footer .footerTop .left .leftBottom h2 {line-height:2;}
 /* footer 글씨 공통 */
-footer .footerTop .help a, footer .footerTop .exclusive p, footer .footerTop .right .store a {
+footer .footerTop .help a, footer .footerTop .exclusive p, footer .footerTop .right .store a, footer .footerTop .left .leftBottom a {
     font-size:0.85rem; line-height:2.5;
 }
 /* 2번째 단 */
