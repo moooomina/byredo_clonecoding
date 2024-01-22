@@ -4,7 +4,7 @@
 const gnb = document.querySelectorAll('#gnb li > a')
 console.log(gnb)
 //서브메뉴 변수
-const subWrap = document.querySelectorAll('.headerBottom > div')
+const subWrap = document.querySelectorAll('.headerBottom > .subWrap')
 
 //모든 서브메뉴 숨기기
 const subWrap_func = ()=> {for(let s of subWrap){s.style.display='none'}}
