@@ -17,7 +17,6 @@ main .productWrap {
     justify-content:space-between;
 }
 main .productWrap .product {
-    background-color:lightblue;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
     width:25%; height:50vh; padding:20px;
