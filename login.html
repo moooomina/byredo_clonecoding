@@ -11,6 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="./images/main/icon/logo_favicon_op.png" type="image/x-icon">
 </head>
+<style>
+.checkbox-wrapper-48 {
+    --gray: #000;
+    --very-light-gray: #000;
+    --light-gray: #000;
+    --x-light-gray: #000;
+    --gradient: linear-gradient(#000);
+}
+
+.checkbox-wrapper-48 label {
+    font-size: 1rem;
+}
+/* CORE STYLES */
+.checkbox-wrapper-48 input {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    width: 1em;
+    height: 1em;
+    font: inherit;
+    border: 0.1em solid var(--light-gray);
+    margin-bottom: -0.125em;
+}
+.checkbox-wrapper-48 input[type=checkbox] {
+    border-radius: 0.25em;
+}
+.checkbox-wrapper-48 input:checked {
+    border-color: transparent;
+    background: var(--gradient) border-box;
+    box-shadow: 0 0 0 0.25rem inset #f7f7f7;
+    background-color:#000;
+}
+</style>
 <body>
     <!-- header -->
     <header>
@@ -1384,46 +1417,50 @@
         <div class="account">
             <h1>Account</h1>
         </div>
-        <section class="registeredCustomers">
-            <h2>Registered Customers</h2>
-            <div class="email">
-                <div class="emailAddress">
-                    <span>Email address</span>
-                    <span>Required</span>
+        <div class="wrap">
+            <section class="registeredCustomers">
+                <h2>Registered Customers</h2>
+                <div class="email">
+                    <div class="emailAddress">
+                        <span>Email address</span>
+                        <span>Required</span>
+                    </div>
+                    <div class="userEmail">
+                        <span><input type="text" id="emailInput"></span>
+                    </div>
+                    <div class="emError"><!-- JS --></div>
                 </div>
-                <div class="userEmail">
-                    <span><input type="text" id="emailInput"></span>
+                <div class="password">
+                    <div class="pw">
+                        <span>Password</span>
+                        <span><a href="#">Forgot your password?</a></span>
+                    </div>
+                    <div class="userPw">
+                        <span><input type="text" id="pwInput"></span>
+                    </div>
+                    <div class="pwError"><!-- JS --></div>
                 </div>
-                <div class="emError"><!-- JS --></div>
-            </div>
-            <div class="password">
-                <div class="pw">
-                    <span>Password</span>
-                    <span><a href="#">Forgot your password?</a></span>
+                <div class="empwRemember">
+                    <div class="remember checkbox-wrapper-48">
+                        <label for="rememberCk">
+                            <input type="checkbox" name="rememberCk" id="rememberCk">
+                            <span>Remember me</span>
+                        </label>
+                    </div>
                 </div>
-                <div class="userPw">
-                    <span><input type="text" id="pwInput"></span>
+                <div class="error"><!-- JS --></div>
+                <div class="btn">
+                    <button type="button" id="signin">Sign in</button>
                 </div>
-                <div class="pwError"><!-- JS --></div>
-            </div>
-            <div class="empwRemember">
-                <div class="remember">
-                    <input type="checkbox" name="rememberCk" id="rememberCk">
-                    <label for="rememberCk">Remember me</label>
+            </section>
+            <section class="newCustomer">
+                <h2>New Customer</h2>
+                <span>Create an account to modify an order, view and track a shipment, and update your account info.</span>
+                <div class="register">
+                    <a href="#">Register</a>
                 </div>
-            </div>
-            <div class="error"><!-- JS --></div>
-            <div class="btn">
-                <button type="button" id="signin">Sign in</button>
-            </div>
-        </section>
-        <section class="newCustomer">
-            <h2>New Customer</h2>
-            <span>Create an account to modify an order, view and track a shipment, and update your account info.</span>
-            <div class="register">
-                <a href="#">Register</a>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <!-- footer -->
     <footer>

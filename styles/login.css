@@ -1,32 +1,57 @@
-main {}
-main .account {}
-main .account h1 {}
-main .account .registeredCustomers {}
-main .account .registeredCustomers h2 {}
-main .account .registeredCustomers .email {}
-main .account .registeredCustomers .email .emailAddress {}
-main .account .registeredCustomers .email .emailAddress span {}
-main .account .registeredCustomers .email .userEmail {}
-main .account .registeredCustomers .email .userEmail span {}
-main .account .registeredCustomers .email .userEmail span #emailInput {}
-main .account .registeredCustomers .email .emError {}
-main .account .registeredCustomers .password {}
-main .account .registeredCustomers .password .pw {}
-main .account .registeredCustomers .password .pw span {}
-main .account .registeredCustomers .password .pw span a {}
-main .account .registeredCustomers .password .userPw {}
-main .account .registeredCustomers .password .userPw span {}
-main .account .registeredCustomers .password .userPw span #pwInput {}
-main .account .registeredCustomers .password .pwError {}
-main .account .registeredCustomers .empwRemember {}
-main .account .registeredCustomers .empwRemember .remember {}
-main .account .registeredCustomers .empwRemember .remember #remeberCk {}
-main .account .registeredCustomers .empwRemember .remember label {}
-main .account .registeredCustomers .error {}
-main .account .registeredCustomers .btn {}
-main .account .registeredCustomers .btn #signin {}
-main .account .newCustomer {}
-main .account .newCustomer h2 {}
-main .account .newCustomer span {}
-main .account .newCustomer .register {}
-main .account .newCustomer .register a {}
+main {width:100%; margin:0 auto;}
+main .account {background-color:#fafafa; padding:15px 0 18px;}
+main .account h1 {text-align:center; font-size:1.25rem; font-weight:500;}
+main .wrap {
+    display:flex; flex-flow:column nowrap; align-items:center;
+    background-color:#f7f7f7;
+}
+main .wrap .registeredCustomers {margin-bottom:40px;}
+main .wrap .registeredCustomers h2 {margin:30px 0; font-size:1.15rem;}
+main .wrap .registeredCustomers .email {}
+/* 제목 공통 */
+main .wrap .registeredCustomers .email .emailAddress,
+main .wrap .registeredCustomers .password .pw {
+    display:flex; justify-content:space-between; margin-bottom:5px;
+}
+/* input 공통 */
+main .wrap .registeredCustomers .email .userEmail span #emailInput,
+main .wrap .registeredCustomers .password .userPw span #pwInput {
+    background-color:#fff; border:1px solid #000;
+    width:450px; height:40px; padding:20px 10px; margin-bottom:20px;
+}
+main .wrap .registeredCustomers .email .emailAddress {}
+main .wrap .registeredCustomers .email .emailAddress span {}
+main .wrap .registeredCustomers .email .emailAddress span:last-child {font-size:0.9rem;}
+main .wrap .registeredCustomers .email .userEmail {}
+main .wrap .registeredCustomers .email .userEmail span {}
+main .wrap .registeredCustomers .email .userEmail span #emailInput {}
+main .wrap .registeredCustomers .email .emError {}
+main .wrap .registeredCustomers .password {}
+main .wrap .registeredCustomers .password .pw {}
+main .wrap .registeredCustomers .password .pw span {}
+main .wrap .registeredCustomers .password .pw span a {font-size:0.9rem;}
+main .wrap .registeredCustomers .password .pw span a:hover {border-bottom:1px solid #000;}
+main .wrap .registeredCustomers .password .userPw {}
+main .wrap .registeredCustomers .password .userPw span {}
+main .wrap .registeredCustomers .password .userPw span #pwInput {}
+main .wrap .registeredCustomers .password .pwError {}
+main .wrap .registeredCustomers .empwRemember {margin-bottom:15px;}
+main .wrap .registeredCustomers .empwRemember .remember {}
+main .wrap .registeredCustomers .empwRemember .remember label #remeberCk {margin-right:5px;}
+main .wrap .registeredCustomers .empwRemember .remember label #remeberCk span {}
+main .wrap .registeredCustomers .error {}
+main .wrap .registeredCustomers .btn {
+    background-color:#000; border:1px solid #000;
+    width:450px; height:40px; cursor:pointer;
+    display:flex; justify-content:center;
+}
+main .wrap .registeredCustomers .btn #signin {color:#fff;}
+main .wrap .newCustomer {width:450px;}
+main .wrap .newCustomer h2 {margin-bottom:30px; font-size:1.15rem;}
+main .wrap .newCustomer span {font-size:0.85rem;}
+main .wrap .newCustomer .register {
+    background-color:#fff; border:1px solid #000;
+    width:450px; height:40px; margin:20px 0 80px; cursor:pointer;
+    display:flex; justify-content:center; align-items:center;
+}
+main .wrap .newCustomer .register a {}
