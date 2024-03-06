@@ -1,0 +1,35 @@
+body {min-width:1900px;}
+/* detail page */
+main {height:fit-content;}
+main .location {
+    display:flex; justify-content:space-between;
+    padding:9px 20px;
+}
+main .location > span {}
+main .location > span a {font-size:0.91rem;}
+main .location > span span {font-size:0.91rem;}
+main .container {display:flex;}
+main .container .left {
+    width:50%; display:flex; justify-content:space-between;
+}
+main .container .left .small {width:60%; display:flex; flex-flow:column nowrap;}
+main .container .left .small button {width:100%;}
+main .container .left .small button:first-child {border:1px solid #000;}
+.active {border:1px solid #000;}
+main .container .left .small .imgBtn01 {
+    background-image:url(../images/detail/small_01.jpg);
+    width:100%; height:30.25%; background-position:center;
+    background-size:cover;
+}
+main .container .left .small .imgBtn02 {
+    background-image:url(../images/detail/small_02.jpg);
+    width:100%; height:30.25%; background-position:center;
+    background-size:cover;
+}
+main .container .left .small .imgBtn03 {
+    background-image:url(../images/detail/small_03.jpg);
+    width:100%; height:30.25%; background-position:center;
+    background-size:cover;
+}
+main .container .left .big {overflow:hidden;}
+main .container .left .big img {width:100%; object-fit:cover; object-position:center;}
