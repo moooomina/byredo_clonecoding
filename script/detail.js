@@ -1,25 +1,33 @@
-// 왼쪽 썸네일 이미지 JS
-//1. small-imgBtn 클릭하면 (ex)small01 클릭하면
-//2. big-img(src) 값이 변경된다. (ex) big1이 big2 이미지 변경
+/* detail */
 
 const container = document.querySelector('.container');
 const small = container.querySelectorAll('.small button');
 const big = container.querySelector('.big img');
 console.log(container, small, big);
 
+small[0].classList.add('active')
+
 small[0].addEventListener('click',function(){
     big.src= "./images/detail/big_01.jpg";
-    small[0].classList.add('.active')
+    small[0].classList.add('active')
+    small[1].classList.remove('active')
+    small[2].classList.remove('active')
 })
 small[1].addEventListener('click',function(){
     big.src= "./images/detail/big_02.jpg";
-    small[1].classList.add('.active')
+    small[1].classList.add('active')
+    small[0].classList.remove('active')
+    small[2].classList.remove('active')
 })
 small[2].addEventListener('click',function(){
     big.src= "./images/detail/big_03.jpg";
-    small[2].classList.add('.active')
+    small[2].classList.add('active')
+    small[0].classList.remove('active')
+    small[1].classList.remove('active')
 })
 
-big.addEventListener('click',()=>{
-    big.style.width = '120%'
-})
+const subName = document.querySelectorAll('.subName')
+const subContents = document.querySelectorAll('.subContents')
+const moreBtn = document.querySelectorAll('.moreBtn')
+console.log(subName, subContents, moreBtn)
+
