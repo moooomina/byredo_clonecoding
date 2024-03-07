@@ -34,7 +34,7 @@ main .container .left .small .imgBtn03 {
 main .container .left .big {overflow:hidden;}
 main .container .left .big img {width:100%; object-fit:cover; object-position:center;}
 main .container .right {width:50%;}
-main .container .right #buyFrm {width:70%; margin:0 auto;}
+main .container .right #buyFrm {width:65%; margin:0 auto;}
 main .container .right #buyFrm fieldset {}
 main .container .right #buyFrm fieldset .title {
     display:flex; justify-content:space-between; border-bottom:1px solid #000;
@@ -43,7 +43,7 @@ main .container .right #buyFrm fieldset .title {
 main .container .right #buyFrm fieldset .title h2 {font-size:1.2rem; font-weight:500;}
 main .container .right #buyFrm fieldset .buyInfo {}
 main .container .right #buyFrm fieldset .buyInfo #opt {
-    width:80%; border-right:1px solid #000;
+    width:79%; border-right:1px solid #000;
     background:#fff url(../images/main/icon/more.png) no-repeat 97% center;
     font-size:0.938rem; padding:10px 0;
 }
@@ -51,10 +51,12 @@ main .container .right #buyFrm fieldset .buyInfo #opt option {}
 main .container .right #buyFrm fieldset .buyInfo #opt option span {}
 main .container .right #buyFrm fieldset .buyInfo #opt option .price {margin-left:100px;}
 main .container .right #buyFrm fieldset .buyInfo .numResult {
-    width:20%; padding:8px 15px;
+    width:21%; padding:8px 15px;
 }
 main .container .right #buyFrm fieldset .buyInfo .numResult #minus {}
-main .container .right #buyFrm fieldset .buyInfo .numResult #numCount {width:50px;}
+main .container .right #buyFrm fieldset .buyInfo .numResult #numCount {
+    width:50px; text-align:center; font-size:0.9rem; font-weight:500;
+}
 main .container .right #buyFrm fieldset .buyInfo .numResult #plus {}
 main .container .right #buyFrm fieldset .buy {
     background-color:#000; border:1px solid #000;
@@ -66,16 +68,16 @@ main .container .right #buyFrm fieldset .subInfoWrap {}
 main .container .right #buyFrm fieldset .subInfoWrap .subBox {}
 main .container .right #buyFrm fieldset .subInfoWrap .subBox .subName {
     display:flex; justify-content:space-between; align-items:center; padding:10px 10px 10px 0;
-    border-bottom:1px solid #000; cursor:pointer;
+    border-bottom:1px solid #dbdde2; cursor:pointer;
 }
 main .container .right #buyFrm fieldset .subInfoWrap .subBox .subName span {font-size:0.9rem;}
-main .container .right #buyFrm fieldset .subInfoWrap .subBox .subName span .moreBtn {}
+main .container .right #buyFrm fieldset .subInfoWrap .subBox .subName .moreBtn {}
 main .container .right #buyFrm fieldset .subInfoWrap .subBox .subContents {
-    margin-top:20px; border-bottom:1px solid #000; padding-bottom:10px; display:none;
+    margin-top:20px; border-bottom:1px solid #dbdde2; padding-bottom:10px; display:none;
 }
 main .container .right #buyFrm fieldset .subInfoWrap .subBox .subContents p {font-size:0.825rem; margin-bottom:10px;}
 main .container .right #buyFrm fieldset .subInfoWrap .subBox .listWrap {
-    display:grid; display:none;
+    display:grid;
     grid-template-areas:
     'txt1 txt2' 
     'txt3 txt4';
