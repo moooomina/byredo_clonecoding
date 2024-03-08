@@ -1,4 +1,4 @@
-body {min-width:1920px;}
+body {min-width:1900px;}
 /* main */
 main {}
 /* mainImg 공통 */
@@ -29,6 +29,9 @@ main .productWrap .product span {
 }
 main .productWrap .product span:last-child {right:20px;}
 main .productWrap .product a {display:block;}
+main .productWrap .product .after {display:none;}
+main .productWrap .product:hover .after {display:block;}
+main .productWrap .product:hover .before {display:none;}
 /* 첫번째행 이미지 */
 main .productTop {
     background-image:url(../images/main/main_1920.jpg);

@@ -85,19 +85,19 @@ header .headerBottom .subWrap .subSurvice > a {
 }
 header .headerBottom .subWrap .subSurvice a img {margin-right:10px;}
 header .headerBottom .subWrap .subSurvice .lang {}
-header .headerBottom .subWrap .subSurvice .lang > a {
+header .headerBottom .subWrap .subSurvice .lang .langBtn {
     display:flex; justify-content:space-between; align-items:center;
     padding-bottom:10px;
 }
-header .headerBottom .subWrap .subSurvice .lang a span {
+header .headerBottom .subWrap .subSurvice .lang .langBtn span {
     display:flex; justify-content:space-between; align-items:center;
     border-radius:50%;
 }
-header .headerBottom .subWrap .subSurvice .lang a span .nationalFlag {
+header .headerBottom .subWrap .subSurvice .lang .langBtn span .nationalFlag {
     border-radius:50%; width:18px; height:18px;
     overflow:hidden; margin-right:10px;
 }
-header .headerBottom .subWrap .subSurvice .lang a img:first-child {
+header .headerBottom .subWrap .subSurvice .lang .langBtn img:first-child {
     width:23px; transform:translateX(-10%);
 }
 /* 언어 선택창 */
@@ -105,7 +105,7 @@ header .headerBottom .subWrap .subSurvice .lang .langSelect {
     background-color:#fff; height:155px; overflow:auto;
     display:flex; flex-flow:column nowrap;
     border:1px solid #dbdde2;
-    display:none;
+    /* display:none; */
 }
 header .headerBottom .subWrap .subSurvice .lang .langSelect > a {}
 header .headerBottom .subWrap .subSurvice .lang .langSelect a {
@@ -123,20 +123,21 @@ header .headerBottom .subWrap .subSurvice .lang .langSelect a span {}
 header .headerBottom .subWrap .subSurvice .lang .langSelect a img {}
 /* 영어 선택 */
 header .headerBottom .subWrap .subSurvice .enlang {margin-top:5px;}
-header .headerBottom .subWrap .subSurvice .enlang a {
+header .headerBottom .subWrap .subSurvice .enlang .langBtn {
     display:flex; justify-content:space-between; align-items:center;
 }
-header .headerBottom .subWrap .subSurvice .enlang a span {
+header .headerBottom .subWrap .subSurvice .enlang .langBtn span {
     display:flex; justify-content:space-between; align-items:center;
 }
-header .headerBottom .subWrap .subSurvice .enlang a span img {}
-header .headerBottom .subWrap .subSurvice .enlang a img {}
-header .headerBottom .subWrap .subSurvice .enlang a img.more {}
+header .headerBottom .subWrap .subSurvice .enlang .langBtn span img {}
+header .headerBottom .subWrap .subSurvice .enlang .langBtn img {}
+header .headerBottom .subWrap .subSurvice .enlang .langBtn img.more {}
 /* 영어 선택 - 창 */
 header .headerBottom .subWrap .subSurvice .enlang .enSelect {
     margin-top:15px;
     border:1px solid #dbdde2;
-    display:none;
+    display:flex; flex-flow:column nowrap;
+    /* display:none; */
 }
 header .headerBottom .subWrap .subSurvice .enlang .enSelect a {
     border-bottom:1px solid #dbdde2; padding:10px;
@@ -167,9 +168,9 @@ header .headerBottom .perfume .subSurvice > a {}
 header .headerBottom .perfume .subSurvice a img {}
 header .headerBottom .perfume .subSurvice .lang {}
 header .headerBottom .perfume .subSurvice .lang > a {}
-header .headerBottom .perfume .subSurvice .lang a span {}
-header .headerBottom .perfume .subSurvice .lang a span .nationalFlag {}
-header .headerBottom .perfume .subSurvice .lang a img:first-child {}
+header .headerBottom .perfume .subSurvice .lang .langBtn span {}
+header .headerBottom .perfume .subSurvice .lang .langBtn span .nationalFlag {}
+header .headerBottom .perfume .subSurvice .lang .langBtn img:first-child {}
 /* 언어 선택창 */
 header .headerBottom .perfume .subSurvice .lang .langSelect {}
 header .headerBottom .perfume .subSurvice .lang .langSelect > a {}
@@ -180,11 +181,11 @@ header .headerBottom .perfume .subSurvice .lang .langSelect a span {}
 header .headerBottom .perfume .subSurvice .lang .langSelect a img {}
 /* 영어 선택 */
 header .headerBottom .perfume .subSurvice .enlang {}
-header .headerBottom .perfume .subSurvice .enlang a {}
-header .headerBottom .perfume .subSurvice .enlang a span {}
-header .headerBottom .perfume .subSurvice .enlang a span img {}
-header .headerBottom .perfume .subSurvice .enlang a img {}
-header .headerBottom .perfume .subSurvice .enlang a img.more {}
+header .headerBottom .perfume .subSurvice .enlang .langBtn {}
+header .headerBottom .perfume .subSurvice .enlang .langBtn span {}
+header .headerBottom .perfume .subSurvice .enlang .langBtn span img {}
+header .headerBottom .perfume .subSurvice .enlang .langBtn img {}
+header .headerBottom .perfume .subSurvice .enlang .langBtn img.more {}
 /* 영어 선택 - 창 */
 header .headerBottom .perfume .subSurvice .enlang .enSelect {}
 header .headerBottom .perfume .subSurvice .enlang .enSelect a {}
@@ -205,14 +206,14 @@ header .headerBottom .makeup .subSurvice {}
 header .headerBottom .makeup .subSurvice a {}
 header .headerBottom .makeup .subSurvice a img {}
 header .headerBottom .makeup .subSurvice .lang {}
-header .headerBottom .makeup .subSurvice .lang a {}
-header .headerBottom .makeup .subSurvice .lang a img {}
+header .headerBottom .makeup .subSurvice .lang .langBtn {}
+header .headerBottom .makeup .subSurvice .lang .langBtn img {}
 header .headerBottom .makeup .subSurvice .lang .langSelect {}
 header .headerBottom .makeup .subSurvice .lang .langSelect a {}
 header .headerBottom .makeup .subSurvice .lang .langSelect a img {}
 header .headerBottom .makeup .subSurvice .enlang {}
-header .headerBottom .makeup .subSurvice .enlang a {}
-header .headerBottom .makeup .subSurvice .enlang a img {}
+header .headerBottom .makeup .subSurvice .enlang .langBtn {}
+header .headerBottom .makeup .subSurvice .enlang .langBtn img {}
 header .headerBottom .makeup .subSurvice .enlang .enSelect {}
 header .headerBottom .makeup .subSurvice .enlang .enSelect a {}
 /* 홈프라그란스 */
@@ -231,14 +232,14 @@ header .headerBottom .home .subSurvice {}
 header .headerBottom .home .subSurvice a {}
 header .headerBottom .home .subSurvice a img {}
 header .headerBottom .home .subSurvice .lang {}
-header .headerBottom .home .subSurvice .lang a {}
-header .headerBottom .home .subSurvice .lang a img {}
+header .headerBottom .home .subSurvice .lang .langBtn {}
+header .headerBottom .home .subSurvice .lang .langBtn img {}
 header .headerBottom .home .subSurvice .lang .langSelect {}
 header .headerBottom .home .subSurvice .lang .langSelect a {}
 header .headerBottom .home .subSurvice .lang .langSelect a img {}
 header .headerBottom .home .subSurvice .enlang {}
-header .headerBottom .home .subSurvice .enlang a {}
-header .headerBottom .home .subSurvice .enlang a img {}
+header .headerBottom .home .subSurvice .enlang .langBtn {}
+header .headerBottom .home .subSurvice .enlang .langBtn img {}
 header .headerBottom .home .subSurvice .enlang .enSelect {}
 header .headerBottom .home .subSurvice .enlang .enSelect a {}
 /* 핸드바디케어 */
@@ -257,14 +258,14 @@ header .headerBottom .subWrapCare .subSurvice {}
 header .headerBottom .subWrapCare .subSurvice a {}
 header .headerBottom .subWrapCare .subSurvice a img {}
 header .headerBottom .subWrapCare .subSurvice .lang {}
-header .headerBottom .subWrapCare .subSurvice .lang a {}
-header .headerBottom .subWrapCare .subSurvice .lang a img {}
+header .headerBottom .subWrapCare .subSurvice .lang .langBtn {}
+header .headerBottom .subWrapCare .subSurvice .lang .langBtn img {}
 header .headerBottom .subWrapCare .subSurvice .lang .langSelect {}
 header .headerBottom .subWrapCare .subSurvice .lang .langSelect a {}
 header .headerBottom .subWrapCare .subSurvice .lang .langSelect a img {}
 header .headerBottom .subWrapCare .subSurvice .enlang {}
-header .headerBottom .subWrapCare .subSurvice .enlang a {}
-header .headerBottom .subWrapCare .subSurvice .enlang a img {}
+header .headerBottom .subWrapCare .subSurvice .enlang .langBtn {}
+header .headerBottom .subWrapCare .subSurvice .enlang .langBtn img {}
 header .headerBottom .subWrapCare .subSurvice .enlang .enSelect {}
 header .headerBottom .subWrapCare .subSurvice .enlang .enSelect a {}
 /* 바이프로덕트 */
@@ -283,14 +284,14 @@ header .headerBottom .product .subSurvice {}
 header .headerBottom .product .subSurvice a {}
 header .headerBottom .product .subSurvice a img {}
 header .headerBottom .product .subSurvice .lang {}
-header .headerBottom .product .subSurvice .lang a {}
-header .headerBottom .product .subSurvice .lang a img {}
+header .headerBottom .product .subSurvice .lang .langBtn {}
+header .headerBottom .product .subSurvice .lang .langBtn img {}
 header .headerBottom .product .subSurvice .lang .langSelect {}
 header .headerBottom .product .subSurvice .lang .langSelect a {}
 header .headerBottom .product .subSurvice .lang .langSelect a img {}
 header .headerBottom .product .subSurvice .enlang {}
-header .headerBottom .product .subSurvice .enlang a {}
-header .headerBottom .product .subSurvice .enlang a img {}
+header .headerBottom .product .subSurvice .enlang .langBtn {}
+header .headerBottom .product .subSurvice .enlang .langBtn img {}
 header .headerBottom .product .subSurvice .enlang .enSelect {}
 header .headerBottom .product .subSurvice .enlang .enSelect a {}
 /* 헤더 오른쪽 (아이콘) */
@@ -412,14 +413,14 @@ header .sideOpen .sideMenu .m_navOpen #m_gnb li .m_product ul li {}
 /* sideMenuBottom */
 header .sideOpen .sideMenu .sideMenuBottom {}
 header .sideOpen .sideMenu .sideMenuBottom .lang {}
-header .sideOpen .sideMenu .sideMenuBottom .lang a {}
-header .sideOpen .sideMenu .sideMenuBottom .lang a img {}
+header .sideOpen .sideMenu .sideMenuBottom .lang .langBtn {}
+header .sideOpen .sideMenu .sideMenuBottom .lang .langBtn img {}
 header .sideOpen .sideMenu .sideMenuBottom .lang .langSelect {}
 header .sideOpen .sideMenu .sideMenuBottom .lang .langSelect a {}
 header .sideOpen .sideMenu .sideMenuBottom .lang .langSelect a img {}
 header .sideOpen .sideMenu .sideMenuBottom .enlang {}
-header .sideOpen .sideMenu .sideMenuBottom .enlang a {}
-header .sideOpen .sideMenu .sideMenuBottom .enlang a img {}
+header .sideOpen .sideMenu .sideMenuBottom .enlang .langBtn {}
+header .sideOpen .sideMenu .sideMenuBottom .enlang .langBtn img {}
 header .sideOpen .sideMenu .sideMenuBottom .enlang .enSelect {}
 header .sideOpen .sideMenu .sideMenuBottom .enlang .enSelect a {}
 header .sideOpen .sideMenu .sideMenuBottom .mypage {}
@@ -436,31 +437,31 @@ footer .footerTop .left {width:25%; padding:0 24px 7px;}
 footer .footerTop .left .leftTop {}
 /* 언어선택 */
 footer .footerTop .left .leftTop .lang {width:200px;}
-footer .footerTop .left .leftTop .lang > a {
+footer .footerTop .left .leftTop .lang .langBtn {
     display:flex; justify-content:space-between; align-items:center;
     background-color:#fff; border:1px solid #dbdde2; padding:10px;
 }
-footer .footerTop .left .leftTop .lang a span {
+footer .footerTop .left .leftTop .lang .langBtn span {
     display:flex; justify-content:space-between; align-items:center;
     border-radius:50%; font-size:0.85rem;
 }
-footer .footerTop .left .leftTop .lang a span .nationalFlag {
+footer .footerTop .left .leftTop .lang .langBtn span .nationalFlag {
     border-radius:50%; width:18px; height:18px;
     overflow:hidden; margin-right:10px;
 }
-footer .footerTop .left .leftTop .lang a img:first-child {
+footer .footerTop .left .leftTop .lang .langBtn img:first-child {
     width:23px; transform:translateX(-10%);
 }
-footer .footerTop .left .leftTop .lang a span .nationalFlag img {}
-footer .footerTop .left .leftTop .lang a span span {}
-footer .footerTop .left .leftTop .lang a img {}
+footer .footerTop .left .leftTop .lang .langBtn span .nationalFlag img {}
+footer .footerTop .left .leftTop .lang .langBtn span span {}
+footer .footerTop .left .leftTop .lang .langBtn img {}
 /* 언어 선택창 */
 footer .footerTop .left .leftTop .lang .langSelect {
     background-color:#fff; height:155px; overflow:auto; width:200px;
     display:flex; flex-flow:column nowrap;
     border:1px solid #dbdde2;
     /* 버튼 효과 넣기 */
-    display:none;
+    /* display:none; */
 }
 footer .footerTop .left .leftTop .lang .langSelect > a {}
 footer .footerTop .left .leftTop .lang .langSelect a {
@@ -477,21 +478,22 @@ footer .footerTop .left .leftTop .lang .langSelect a .nationalFlag img {
 footer .footerTop .left .leftTop .lang .langSelect a span {font-size:0.85rem;}
 /* 영어 선택 */
 footer .footerTop .left .leftTop .enlang {margin-top:5px; width:200px;}
-footer .footerTop .left .leftTop .enlang a {
+footer .footerTop .left .leftTop .enlang .langBtn {
     display:flex; justify-content:space-between; align-items:center;
     background-color:#fff; border:1px solid #dbdde2; padding:10px;
 }
-footer .footerTop .left .leftTop .enlang a span {
+footer .footerTop .left .leftTop .enlang .langBtn span {
     display:flex; justify-content:space-between; align-items:center; font-size:0.85rem;
 }
-footer .footerTop .left .leftTop .enlang a span img {margin-right:10px;}
-footer .footerTop .left .leftTop .enlang a img {}
+footer .footerTop .left .leftTop .enlang .langBtn span img {margin-right:10px;}
+footer .footerTop .left .leftTop .enlang .langBtn img {}
 /* 영어 선택 - 창 */
 footer .footerTop .left .leftTop .enlang .enSelect {
     width:200px;
+    display:flex; flex-flow:column nowrap;
     border:1px solid #dbdde2;
     /* 버튼 효과 넣기 */
-    display:none;
+    /* display:none; */
 }
 footer .footerTop .left .leftTop .enlang .enSelect a {
     border-bottom:1px solid #dbdde2; padding:10px; font-size:0.85rem;

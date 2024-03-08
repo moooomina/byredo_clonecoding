@@ -40,7 +40,8 @@ const close = document.querySelectorAll('.close')
 //보여지는 변수
 const searchFrm = document.querySelector('.searchFrm')
 const cartBg = document.querySelector('.cartBg')
-console.log(searchFrm,cartBg)
+const cartClose = cartBg.querySelector('.close')
+console.log(searchFrm,cartBg,cartClose)
 
 searchFrm.classList.add('hide') /* 자바스크립트에서 추가한 클래스를 CSS에 꼭 적어줘야함 */
 search.addEventListener('click',()=>{
@@ -56,12 +57,34 @@ cart.addEventListener('click',()=>{
 
 //--------------------------------------------------
 //언어선택
-const langImg = document.querySelectorAll('.lang > a > img')
+const langBtn = document.querySelectorAll('.lang .langBtn')
 const langSelect = document.querySelectorAll('.langSelect')
-console.log(langImg,langSelect)
+const enlangBtn = document.querySelectorAll('.enlang .langBtn')
+const enSelect = document.querySelectorAll('.enlang .enSelect')
+console.log(langBtn,langSelect,enlangBtn,enSelect)
 
-langSelect.classList.add('hide')
-langImg.addEventListener('click',()=>{
-    langSelect.classList.toggle('hide')
-    langSelect.classList.toggle('showFlex')
+// lang.addEventListener('click',()=>{
+//     langSelect.classList.toggle('hide')
+//     // langSelect.classList.toggle('showFlex')
+// })
+const lang_hide = ()=>{for(let h of langSelect){h.style.display='none'}}
+const enlang_hide = ()=>{for(let e of enSelect){e.style.display='none'}}
+// 숨기기는게 중복이므로 함수(변수)로 만들어서 사용한다.
+// 1. 아래 탭들을 가린다.
+lang_hide()
+enlang_hide()
+// 2. 누르면 탭이 보이게 한다.
+langBtn.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        lang_hide() //모두 숨기고
+        langSelect[i].style.display = 'block' //내가 누른 인덱스와 동일한 tab만 보이게 설정
+    })
 })
+enlangBtn.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        enlang_hide() //모두 숨기고
+        enSelect[i].style.display = 'flex' //내가 누른 인덱스와 동일한 tab만 보이게 설정
+    })
+})
+
+//다시 누르면 닫히게 설정하는 법
