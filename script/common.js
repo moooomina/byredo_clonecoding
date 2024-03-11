@@ -63,6 +63,10 @@ cart.addEventListener('click',()=>{
     cartBg.classList.toggle('showBlock')
 })
 
+cartClose.addEventListener('click',()=>{
+    cartBg.classList.toggle('hide')
+})
+
 //--------------------------------------------------
 //언어선택
 const langBtn = document.querySelectorAll('.lang .langBtn')
@@ -74,7 +78,7 @@ console.log(langBtn,langSelect,enlangBtn,enSelect)
 // lang.addEventListener('click',()=>{
 //     langSelect.classList.toggle('hide')
 //     // langSelect.classList.toggle('showFlex')
-// })
+// // })
 const lang_hide = ()=>{for(let h of langSelect){h.style.display='none'}}
 const enlang_hide = ()=>{for(let e of enSelect){e.style.display='none'}}
 // 숨기기는게 중복이므로 함수(변수)로 만들어서 사용한다.
