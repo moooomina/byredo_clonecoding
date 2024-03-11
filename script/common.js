@@ -1,3 +1,11 @@
+//검은색 창 닫기
+const free = document.querySelector('.free')
+const freeClose = free.querySelector('.close img')
+
+freeClose.addEventListener('click',()=>{
+    free.style.display = 'none'
+})
+
 //nav 동적기능
 //메뉴 변수
 const gnb = document.querySelectorAll('#gnb li > a')
